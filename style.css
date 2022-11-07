@@ -1,0 +1,17 @@
+.nav {
+  display: none;
+}
+
+/* .project {
+  width: 50vh;
+  height: 50vw;
+} */
+
+.project-image {
+  width: 100%;
+}
+
+#skills {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
