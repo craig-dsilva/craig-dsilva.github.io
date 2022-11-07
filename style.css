@@ -1,17 +1,74 @@
+body {
+  margin: 0;
+  text-align: center;
+  @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+}
+
 .nav {
   display: none;
 }
 
-/* .project {
-  width: 50vh;
-  height: 50vw;
-} */
+#home {
+  height: 40vh;
+}
+
+.about-text {
+  line-height: 1.6;
+}
+
+.cyf {
+  color: #00e;
+  text-decoration: underline;
+}
+
+#home,
+#about {
+  padding: 1em 1em;
+}
+
+.intro {
+  padding-top: 25%;
+}
+
+#about {
+  margin-bottom: 2.5em;
+}
+
+.project {
+  margin-bottom: 2em;
+}
 
 .project-image {
   width: 100%;
+  margin-bottom: 1em;
 }
 
-#skills {
+.project-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.skills-container {
   display: grid;
   grid-template-columns: repeat(3, auto);
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer {
+  padding: 2em;
 }

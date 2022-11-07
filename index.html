@@ -10,6 +10,7 @@
   <body>
     <header class="header">
       <h1>Craig D'Silva</h1>
+
       <nav class="nav">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
@@ -18,10 +19,17 @@
       </nav>
     </header>
     <main class="main">
+      <section id="home">
+        <h2 class="intro">
+          I am Craig D'Silva and I am a Full-Stack Developer based in London
+        </h2>
+      </section>
       <section id="about">
-        <p>
+        <p class="about-text">
           I am a Full-Stack Developer Graduate from
-          <a href="https://codeyourfuture.io" target="_blank">CodeYourFuture</a>
+          <a href="https://codeyourfuture.io" target="_blank" class="cyf"
+            >CodeYourFuture</a
+          >
           with experience working in a team and imporving the client's website.
           I have a passion for technology and have been coding for 3 years.
           During my 8 month course at CodeYourFuture, I have gained a lot of
@@ -31,7 +39,7 @@
         </p>
       </section>
       <section id="projects">
-        <p>Projects</p>
+        <h3>Projects</h3>
         <div class="project" id="chatterbox">
           <p>Chatterbox</p>
           <img
@@ -39,7 +47,7 @@
             alt="chatterbox"
             class="project-image"
           />
-          <div class="links">
+          <div class="project-links">
             <a
               href="https://ldn8-horizon-chatterbox-talent.netlify.app/"
               target="_blank"
@@ -55,7 +63,7 @@
         <div class="project" id="countries">
           <p>React Countries Information</p>
           <img src="img/countries.png" alt="countries" class="project-image" />
-          <div class="links">
+          <div class="project-links">
             <a
               href="https://cyf-craig-dsilva-countries-react.netlify.app/"
               target="_blank"
@@ -71,7 +79,7 @@
         <div class="project" id="videos">
           <p>Video Recommedation App</p>
           <img src="img/videos.png" alt="videos" class="project-image" />
-          <div class="links">
+          <div class="project-links">
             <a
               href="https://cyf-craig-dsilva-videos.netlify.app/"
               target="_blank"
@@ -85,13 +93,13 @@
           </div>
         </div>
         <div class="project" id="home-automation">
-          <div class="links">
-            <p>Raspberry Pi Home Automation</p>
-            <img
-              src="img/raspberrypi.jpg"
-              alt="raspberrypi"
-              class="project-image"
-            />
+          <p>Raspberry Pi Home Automation</p>
+          <img
+            src="img/raspberrypi.jpg"
+            alt="raspberrypi"
+            class="project-image"
+          />
+          <div class="project-links">
             <a
               href="https://github.com/craig-dsilva/node-iot-switches-server"
               target="_blank"
@@ -102,7 +110,7 @@
         <div class="project" id="tfl">
           <p>Transport For London Live Arrivals</p>
           <!-- <img src="img/tfl.png" alt="tfl"class="project-image mobile-project" /> -->
-          <div class="links">
+          <div class="project-links">
             <a href=""><del>Play Store</del> (Coming Soon)</a>
             <a
               href="https://github.com/craig-dsilva/tfl-live-arrivals"
@@ -114,7 +122,7 @@
         <div class="project" id="weather">
           <p>JavaScript Weather</p>
           <img src="img/weather.png" alt="weather" class="project-image" />
-          <div class="links">
+          <div class="project-links">
             <a
               href="https://determined-wiles-089c30.netlify.app/"
               target="_blank"
@@ -129,18 +137,21 @@
         </div>
       </section>
       <section id="skills">
-        <div class="skill" id="html"><p>HTML</p></div>
-        <div class="skill" id="css"><p>CSS</p></div>
-        <div class="skill" id="javascript"><p>JavaScript</p></div>
-        <div class="skill" id="typescript"><p>TypeScript</p></div>
-        <div class="skill" id="react"><p>React</p></div>
-        <div class="skill" id="redux"><p>Redux</p></div>
-        <div class="skill" id="node"><p>Node</p></div>
-        <div class="skill" id="express"><p>Express</p></div>
-        <div class="skill" id="psql"><p>PostgreSQL</p></div>
-        <div class="skill" id="git"><p>Git</p></div>
-        <div class="skill" id="github"><p>GitHub</p></div>
-        <div class="skill" id="terminal"><p>Terminal</p></div>
+        <h3>Skills</h3>
+        <div class="skills-container">
+          <div class="skill" id="html"><p>HTML</p></div>
+          <div class="skill" id="css"><p>CSS</p></div>
+          <div class="skill" id="javascript"><p>JavaScript</p></div>
+          <div class="skill" id="typescript"><p>TypeScript</p></div>
+          <div class="skill" id="react"><p>React</p></div>
+          <div class="skill" id="redux"><p>Redux</p></div>
+          <div class="skill" id="node"><p>Node</p></div>
+          <div class="skill" id="express"><p>Express</p></div>
+          <div class="skill" id="psql"><p>PostgreSQL</p></div>
+          <div class="skill" id="git"><p>Git</p></div>
+          <div class="skill" id="github"><p>GitHub</p></div>
+          <div class="skill" id="terminal"><p>Terminal</p></div>
+        </div>
       </section>
     </main>
     <footer class="footer" id="contact">
