@@ -1,4 +1,5 @@
 body {
+  font-size: 1.5rem;
   margin: 0;
   text-align: center;
   @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
@@ -13,6 +14,7 @@ a {
 .header {
   display: grid;
   grid-template-columns: repeat(2, auto);
+  margin-bottom: 40%;
 }
 
 #nav {
@@ -31,12 +33,17 @@ a {
   height: 10vh;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .nav-link {
   margin-bottom: 1em;
 }
 
-#home {
-  height: 40vh;
+#about {
+  padding: 0 1em;
+  margin-bottom: 27%;
 }
 
 .about-text {
@@ -48,17 +55,8 @@ a {
   text-decoration: underline;
 }
 
-#home,
-#about {
-  padding: 1em 1em;
-}
-
-.intro {
-  padding-top: 25%;
-}
-
-#about {
-  margin-bottom: 2.5em;
+#projects {
+  margin-bottom: 10%;
 }
 
 .project {
@@ -75,9 +73,38 @@ a {
   justify-content: space-around;
 }
 
+.project-link {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  padding: 1em 2em;
+  color: #fff;
+  background-color: rgb(64, 64, 255);
+}
+
+.dead-link {
+  background-color: #808080;
+}
+
+.dead-link:hover {
+  cursor: not-allowed;
+}
+
+#skills {
+  margin-bottom: 5%;
+}
+
 .skills-container {
   display: grid;
   grid-template-columns: repeat(3, auto);
+}
+
+.footer {
+  padding: 2em;
+}
+
+.copyright {
+  margin-bottom: 5%;
 }
 
 .social-links {
@@ -85,6 +112,44 @@ a {
   justify-content: space-around;
 }
 
-.footer {
-  padding: 2em;
+@media screen and (min-width: 800px) {
+  .header {
+    margin-bottom: 20%;
+  }
+
+  .icon {
+    display: none;
+  }
+  #nav {
+    display: block;
+    grid-row-start: 1;
+    grid-column-start: 2;
+  }
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1.7em;
+  }
+  .nav-link {
+    margin-bottom: 0;
+  }
+
+  #about {
+    margin-bottom: 20%;
+  }
+
+  #projects {
+    height: 100%;
+  }
+
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 2em;
+    margin: 0 1em;
+  }
+  .project-image {
+    height: 35vh;
+  }
 }
