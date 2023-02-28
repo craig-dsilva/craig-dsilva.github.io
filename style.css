@@ -78,17 +78,9 @@ ul {
   -webkit-appearance: button;
   -moz-appearance: button;
   appearance: button;
-  padding: 1em 2em;
+  padding: 0.5em 2em;
   color: #fff;
   background-color: rgb(64, 64, 255);
-}
-
-.dead-link {
-  background-color: #808080;
-}
-
-.dead-link:hover {
-  cursor: not-allowed;
 }
 
 #skills {
@@ -144,4 +136,10 @@ ul {
     height: 100%;
   }
 
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+    margin: 0 2em;
+  }
 }
