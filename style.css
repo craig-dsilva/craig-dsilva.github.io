@@ -71,6 +71,7 @@ ul {
 .project-links {
   display: flex;
   justify-content: space-around;
+  margin-top: 5vh;
 }
 
 .project-link {
@@ -143,13 +144,4 @@ ul {
     height: 100%;
   }
 
-  .projects-container {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-gap: 2em;
-    margin: 0 1em;
-  }
-  .project-image {
-    height: 35vh;
-  }
 }

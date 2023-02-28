@@ -4,15 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Craig D'Silva | Full-Stack Developer" />
     <title>Craig D'Silva | Full-Stack Developer</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header class="header">
       <h1>Craig D'Silva</h1>
-      <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+      <!-- <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
         <img src="img/bars-solid.svg" class="hamburger" />
-      </a>
+      </a> -->
       <nav id="nav">
         <ul class="nav">
           <li class="nav-link"><a href="#about">About</a></li>
@@ -46,9 +48,10 @@
           <div class="project" id="chatterbox">
             <p>Chatterbox</p>
             <img
-              src="img/chatterbox.png"
+              src="img/chatterbox.webp"
               alt="chatterbox"
-              class="project-image"
+              width="100%"
+              height="100%"
             />
             <div class="project-links">
               <a
@@ -68,9 +71,10 @@
           <div class="project" id="countries">
             <p>React Countries Information</p>
             <img
-              src="img/countries.png"
+              src="img/countries.webp"
               alt="countries"
-              class="project-image"
+              width="100%"
+              height="100%"
             />
             <div class="project-links">
               <a
@@ -87,30 +91,13 @@
               >
             </div>
           </div>
-          <div class="project" id="videos">
-            <p>Video Recommedation App</p>
-            <img src="img/videos.png" alt="videos" class="project-image" />
-            <div class="project-links">
-              <a
-                href="https://cyf-craig-dsilva-videos.netlify.app/"
-                target="_blank"
-                class="project-link"
-                >Live</a
-              >
-              <a
-                href="https://github.com/craig-dsilva/Full-Stack-Project-Assessment"
-                target="_blank"
-                class="project-link"
-                >GitHub</a
-              >
-            </div>
-          </div>
           <div class="project" id="home-automation">
             <p>Raspberry Pi Home Automation</p>
             <img
-              src="img/raspberrypi.jpg"
+              src="img/raspberrypi.webp"
               alt="raspberrypi"
-              class="project-image"
+              width="100%"
+              height="100%"
             />
             <div class="project-links">
               <a
@@ -123,13 +110,9 @@
           </div>
           <div class="project" id="tfl">
             <p>TFL Live Arrivals</p>
-            <img
-              src="img/sk.jpg"
-              alt="tfl"
-              class="project-image mobile-project"
-            />
+            <img src="img/tfl.webp" alt="tfl" width="100%" height="100%" />
             <div class="project-links">
-              <a class="project-link dead-link"><del>Play Store</del></a>
+              <!-- <a class="project-link dead-link"><del>Play Store</del></a> -->
               <a
                 href="https://github.com/craig-dsilva/tfl-live-arrivals"
                 target="_blank"
@@ -140,7 +123,12 @@
           </div>
           <div class="project" id="weather">
             <p>JavaScript Weather</p>
-            <img src="img/weather.png" alt="weather" class="project-image" />
+            <img
+              src="img/weather.webp"
+              alt="weather"
+              width="100%"
+              height="100%"
+            />
             <div class="project-links">
               <a
                 href="https://determined-wiles-089c30.netlify.app/"
@@ -192,6 +180,5 @@
         </div>
       </div>
     </footer>
-    <script src="script.js"></script>
   </body>
 </html>
