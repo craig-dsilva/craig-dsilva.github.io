@@ -1,9 +1,8 @@
 body {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin: 0;
   text-align: center;
-  @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-  font-family: "Poppins", sans-serif;
+  font-family: "Voces", sans-serif;
 }
 
 a {
@@ -20,10 +19,6 @@ a {
 .top {
   display: flex;
   justify-content: space-around;
-}
-
-.home {
-  margin-left: 1.5em;
 }
 
 #nav {
@@ -115,10 +110,18 @@ ul {
 }
 
 @media screen and (min-width: 800px) {
+  body {
+    font-size: 1.5rem;
+  }
+
   .header {
     display: flex;
     justify-content: space-between;
     margin: 0 0 20% 0;
+  }
+
+  .home {
+    margin-left: 1.5em;
   }
 
   .icon {
@@ -148,8 +151,18 @@ ul {
 
   .projects-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 2em;
     margin: 0 2em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 1.7rem;
+  }
+
+  .projects-container {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
