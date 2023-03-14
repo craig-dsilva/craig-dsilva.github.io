@@ -14,11 +14,17 @@ a {
   margin-bottom: 40%;
   overflow: hidden;
   position: relative;
+  background-color: #000;
+  color: #fff;
 }
 
 .top {
   display: flex;
   justify-content: space-around;
+}
+
+.top a {
+  color:#fff;
 }
 
 #nav {
@@ -60,7 +66,9 @@ ul {
 }
 
 #projects {
-  margin-bottom: 10%;
+  padding: 5% 0;
+  background-color: #000;
+  color: #fff;
 }
 
 .project {
