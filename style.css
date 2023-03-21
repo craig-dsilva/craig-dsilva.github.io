@@ -11,7 +11,6 @@ a {
 }
 
 .header {
-  margin-bottom: 40%;
   overflow: hidden;
   position: relative;
   background-color: #000;
@@ -68,6 +67,10 @@ ul {
 .cyf {
   color: #00e;
   text-decoration: underline;
+}
+
+.profile-picture {
+  display: none;
 }
 
 #projects {
@@ -131,7 +134,7 @@ ul {
   .header {
     display: flex;
     justify-content: space-between;
-    margin: 0 0 20% 0;
+    margin: 0 0 10% 0;
   }
 
   .home {
@@ -171,9 +174,22 @@ ul {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1366px) {
   body {
     font-size: 1.7rem;
+  }
+
+  #about {
+    display: flex;
+  }
+
+  .text {
+    width: 70%;
+    margin-right: 2em;
+  }
+
+  .profile-picture {
+    display: block;
   }
 
   .projects-container {
