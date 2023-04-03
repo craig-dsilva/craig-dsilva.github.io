@@ -1,3 +1,12 @@
+@font-face {
+  font-display: swap;
+  font-family: "Voces";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/voces-v20-latin-regular.woff2") format("woff2"),
+    url("../fonts/voces-v20-latin-regular.woff") format("woff");
+}
+
 body {
   font-size: 1.2rem;
   margin: 0;
@@ -23,7 +32,7 @@ a {
 }
 
 .top a {
-  color:#fff;
+  color: #fff;
 }
 
 #nav {
@@ -37,7 +46,7 @@ a {
   padding: 0;
 }
 
-.top a.icon{
+.top a.icon {
   margin-top: 1.2em;
   font-size: 1.5em;
 }
