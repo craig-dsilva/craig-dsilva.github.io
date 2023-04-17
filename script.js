@@ -9,3 +9,7 @@ const toggleNav = () => {
     intro.style.paddingTop = "0";
   }
 };
+
+const year = new Date().getFullYear();
+const currentYearEl = document.querySelector("#year");
+currentYearEl.innerText = year;
