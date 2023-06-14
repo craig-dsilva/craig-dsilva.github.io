@@ -192,6 +192,12 @@ ul {
   }
 }
 
+.disabled {
+  cursor: not-allowed;
+  text-decoration: line-through;
+  background-color: #808080;
+}
+
 @media screen and (min-width: 1366px) {
   body {
     font-size: 1.7rem;
