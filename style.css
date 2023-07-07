@@ -194,7 +194,7 @@ ul {
 
 .disabled {
   cursor: not-allowed;
-  /* text-decoration: line-through; */
+  text-decoration: line-through;
   background-color: #808080;
 }
 
