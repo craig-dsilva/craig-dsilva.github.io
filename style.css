@@ -70,17 +70,16 @@ ul {
 
 #about {
   text-align: left;
-  padding: 0 1em;
-  margin-bottom: 27%;
+  height: 67vh;
+}
+
+.text {
+  margin: 50% 5%;
+  text-align: center;
 }
 
 .about-text {
   line-height: 1.6;
-}
-
-.cyf {
-  color: #00e;
-  text-decoration: underline;
 }
 
 .profile-picture {
@@ -88,7 +87,7 @@ ul {
 }
 
 #projects {
-  padding: 5% 0;
+  padding: 7% 0;
   background-color: #000;
   color: #fff;
 }
@@ -105,10 +104,6 @@ ul {
 .project-description {
   text-align: left;
   margin: 0 1em;
-}
-
-.project-description a {
-  color: #00e;
 }
 
 .project-links {
@@ -128,7 +123,7 @@ ul {
 }
 
 #skills {
-  margin-bottom: 5%;
+  margin: 5%;
 }
 
 .skills-container {
@@ -167,7 +162,7 @@ ul {
   .icon {
     display: none;
   }
-  
+
   #nav {
     display: block;
     width: 50vw;
@@ -183,18 +178,22 @@ ul {
   }
 
   #about {
-    margin-bottom: 20%;
+    height: 55vh;
   }
 
   #projects {
     height: 100%;
+    padding: 1% 0;
   }
 
-  .projects-container {
+  .project {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2em;
-    margin: 0 2em;
+    grid-template-columns: repeat(2, 50%);
+  }
+
+  .project-description-left {
+    flex-direction: row-reverse;
+    order: -1;
   }
 }
 
@@ -210,19 +209,19 @@ ul {
   }
 
   #about {
-    display: flex;
-  }
-
-  .text {
-    width: 70%;
-    margin-right: 2em;
+    height: 47vh;
   }
 
   .profile-picture {
     display: block;
   }
 
+  .text {
+    margin: 20% 0;
+  }
+
   .projects-container {
+    margin-top: 5%;
     grid-template-columns: repeat(3, 1fr);
   }
 }
