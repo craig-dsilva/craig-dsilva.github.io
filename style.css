@@ -187,11 +187,13 @@ ul {
   }
 
   .project {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
   }
 
-  .right {
+  .project-description-left {
     flex-direction: row-reverse;
+    order: -1;
   }
 }
 
