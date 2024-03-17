@@ -87,7 +87,7 @@ ul {
 }
 
 #projects {
-  padding: 5% 0;
+  padding: 7% 0;
   background-color: #000;
   color: #fff;
 }
@@ -104,10 +104,6 @@ ul {
 .project-description {
   text-align: left;
   margin: 0 1em;
-}
-
-.project-description a {
-  color: #00e;
 }
 
 .project-links {
@@ -127,7 +123,7 @@ ul {
 }
 
 #skills {
-  margin-bottom: 5%;
+  margin: 5%;
 }
 
 .skills-container {
@@ -181,12 +177,13 @@ ul {
     margin-bottom: 0;
   }
 
-  .text {
-    margin: 20% 5%;
+  #about {
+    height: 55vh;
   }
 
   #projects {
     height: 100%;
+    padding: 1% 0;
   }
 
   .project {
@@ -209,11 +206,20 @@ ul {
     font-size: 1.7rem;
   }
 
+  #about {
+    height: 47vh;
+  }
+
   .profile-picture {
     display: block;
   }
 
+  .text {
+    margin: 20% 0;
+  }
+
   .projects-container {
+    margin-top: 5%;
     grid-template-columns: repeat(3, 1fr);
   }
 }
