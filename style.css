@@ -70,17 +70,16 @@ ul {
 
 #about {
   text-align: left;
-  padding: 0 1em;
-  margin-bottom: 27%;
+  height: 67vh;
+}
+
+.text {
+  margin: 50% 5%;
+  text-align: center;
 }
 
 .about-text {
   line-height: 1.6;
-}
-
-.cyf {
-  color: #00e;
-  text-decoration: underline;
 }
 
 .profile-picture {
@@ -167,7 +166,7 @@ ul {
   .icon {
     display: none;
   }
-  
+
   #nav {
     display: block;
     width: 50vw;
@@ -182,8 +181,8 @@ ul {
     margin-bottom: 0;
   }
 
-  #about {
-    margin-bottom: 20%;
+  .text {
+    margin: 20% 5%;
   }
 
   #projects {
@@ -191,10 +190,18 @@ ul {
   }
 
   .projects-container {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2em;
-    margin: 0 2em;
+    margin: 0 2em; */
+  }
+
+  .project {
+    display: flex;
+  }
+
+  .right {
+    flex-direction: row-reverse;
   }
 }
 
@@ -210,12 +217,7 @@ ul {
   }
 
   #about {
-    display: flex;
-  }
-
-  .text {
-    width: 70%;
-    margin-right: 2em;
+    /* display: flex; */
   }
 
   .profile-picture {
