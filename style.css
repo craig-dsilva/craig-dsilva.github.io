@@ -192,6 +192,7 @@ ul {
   }
 
   .project-description-left {
+    text-align: left;
     flex-direction: row-reverse;
     order: -1;
   }
