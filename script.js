@@ -12,6 +12,6 @@ const toggleNav = () => {
 
 const year = new Date().getFullYear();
 const currentYearEl = document.querySelector("#year");
-const experienceYearsEl = document.querySelector("#experience-years")
+// const experienceYearsEl = document.querySelector("#experience-years");
 currentYearEl.innerText = year;
-experienceYearsEl.innerText = year - 2020;
+// experienceYearsEl.innerText = year - 2020;
