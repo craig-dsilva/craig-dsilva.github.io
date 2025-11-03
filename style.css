@@ -86,33 +86,33 @@ ul {
   display: none;
 }
 
-#projects {
+#experience {
   padding: 7% 0;
   background-color: #000;
   color: #fff;
 }
 
-.project {
+.experience {
   margin-bottom: 2em;
 }
 
-.project-image {
+.experience-image {
   width: 100%;
   margin-bottom: 1em;
 }
 
-.project-description {
+.experience-description {
   text-align: left;
   margin: 0 1em;
 }
 
-.project-links {
+.experience-links {
   display: flex;
   justify-content: space-around;
   margin-top: 5vh;
 }
 
-.project-link {
+.experience-link {
   -webkit-appearance: button;
   -moz-appearance: button;
   appearance: button;
@@ -181,17 +181,17 @@ ul {
     height: 55vh;
   }
 
-  #projects {
+  #experience {
     height: 100%;
     padding: 1% 0;
   }
 
-  .project {
+  .experience {
     display: grid;
     grid-template-columns: repeat(2, 50%);
   }
 
-  .project-description-left {
+  .experience-description-left {
     text-align: left;
     flex-direction: row-reverse;
     order: -1;
@@ -221,7 +221,7 @@ ul {
     margin: 20% 0;
   }
 
-  .projects-container {
+  .experience-container {
     margin-top: 5%;
     grid-template-columns: repeat(3, 1fr);
   }
