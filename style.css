@@ -20,14 +20,22 @@ a {
 }
 
 .header {
-  overflow: hidden;
-  position: relative;
   background-color: #000;
   color: #fff;
 }
 
+.top {
+  display: flex;
+  justify-content: space-between;
+  padding: 5%;
+}
+
 .top a {
   color: #fff;
+}
+
+.title {
+  margin: 0;
 }
 
 .icon {
@@ -38,7 +46,6 @@ a {
 
 #nav {
   display: none;
-  margin-top: 5em;
 }
 
 .nav {
