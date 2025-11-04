@@ -168,10 +168,9 @@ ul {
     padding: 1% 0;
   }
 
-  .experience-description-left {
-    text-align: left;
-    flex-direction: row-reverse;
-    order: -1;
+  .experience-top {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -196,6 +195,12 @@ ul {
 
   .text {
     margin: 20% 0;
+  }
+
+  #experience,
+  #skills,
+  #contact {
+    padding: 1% 25%;
   }
 
   .experience-container {
