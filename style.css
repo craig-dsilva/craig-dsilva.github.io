@@ -41,7 +41,6 @@ a {
 .icon {
   background-color: #000;
   border: none;
-  float: right;
 }
 
 #nav {
@@ -51,11 +50,6 @@ a {
 .nav {
   display: flex;
   flex-direction: column;
-}
-
-.top a.icon {
-  margin-top: 1em;
-  font-size: 1.5em;
 }
 
 ul {
@@ -134,38 +128,6 @@ ul {
     font-size: 1.5rem;
   }
 
-  .header {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 0 10% 0;
-  }
-
-  .home {
-    margin-left: 1.5em;
-  }
-
-  .icon {
-    display: none;
-  }
-
-  .top {
-    display: none;
-  }
-
-  #nav {
-    display: block;
-    width: 100%;
-    margin: 0 25%;
-  }
-  .nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  .nav-link {
-    margin-bottom: 0;
-  }
-
   #about {
     height: 55vh;
   }
@@ -187,9 +149,40 @@ ul {
   background-color: #808080;
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1000px) {
   body {
     font-size: 1.7rem;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 10% 0;
+  }
+
+  .top {
+    padding: 2%;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  #nav {
+    display: block;
+    width: 50%;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 2em;
+  }
+
+  .nav-link {
+    margin-bottom: 0;
   }
 
   #about {
@@ -213,5 +206,11 @@ ul {
   .experience-container {
     margin-top: 5%;
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .nav {
+    padding: 3em;
   }
 }
