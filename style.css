@@ -19,11 +19,6 @@ a {
   text-decoration: none;
 }
 
-.header {
-  background-color: #000;
-  color: #fff;
-}
-
 .top {
   display: flex;
   justify-content: space-between;
@@ -36,11 +31,18 @@ a {
 
 .title {
   margin: 0;
+  font-size: 1.5rem;
 }
 
 .icon {
-  background-color: #000;
+  background-color: #fff;
   border: none;
+  padding: 0;
+}
+
+.hamburger {
+  background-color: #fff;
+  color: #000;
 }
 
 #nav {
@@ -50,6 +52,7 @@ a {
 .nav {
   display: flex;
   flex-direction: column;
+  padding: 0;
 }
 
 ul {
@@ -58,10 +61,6 @@ ul {
 
 .nav-link {
   margin-bottom: 1em;
-}
-
-.nav-link a {
-  color: #fff;
 }
 
 #about {
@@ -84,8 +83,8 @@ ul {
 
 #experience {
   padding: 7% 0;
-  background-color: #000;
-  color: #fff;
+  /* background-color: #000;
+  color: #fff; */
 }
 
 .experience {
@@ -178,7 +177,7 @@ ul {
     flex-direction: row;
     justify-content: space-between;
     margin: 0;
-    padding: 2em;
+    padding: 1em;
   }
 
   .nav-link {
