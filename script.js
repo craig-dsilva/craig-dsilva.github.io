@@ -10,6 +10,24 @@ const toggleNav = () => {
   }
 };
 
+const darkMode = () => {
+  const body = document.querySelector("body");
+  const a = document.querySelectorAll("a");
+  const hamburger = document.querySelector(".hamburger");
+  const icon = document.querySelector(".icon");
+
+  body.style.backgroundColor = "#000";
+  body.style.color = "#fff";
+
+  a.forEach((el) => {
+    el.style.color = "#fff";
+  });
+
+  hamburger.style.backgroundColor = "#000";
+  hamburger.style.color = "#fff";
+  icon.style.backgroundColor = "#000";
+};
+
 const year = new Date().getFullYear();
 const currentYearEl = document.querySelector("#year");
 // const experienceYearsEl = document.querySelector("#experience-years");
