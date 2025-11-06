@@ -20,6 +20,13 @@ const darkMode = () => {
   const icon = document.querySelector(".icon");
 
   const manipulate = (theme) => {
+    const themeToggle = document.querySelectorAll(".theme-toggle");
+
+    themeToggle.forEach((el) => {
+      el.src =
+        theme === "light" ? "assets/dark-mode.svg" : "assets/light-mode.svg";
+    });
+
     body.style.backgroundColor = theme === "dark" ? black : white;
     body.style.color = theme === "dark" ? white : black;
 

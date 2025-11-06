@@ -34,6 +34,14 @@ a {
   font-size: 1.5rem;
 }
 
+.theme-mobile {
+  margin: 0;
+}
+
+.theme-desktop {
+  display: none;
+}
+
 .icon {
   background-color: #fff;
   border: none;
@@ -153,12 +161,23 @@ ul {
 
   .header {
     display: flex;
-    justify-content: space-between;
-    margin: 0 0 10% 0;
+    justify-content: space-around;
   }
 
   .top {
-    padding: 2%;
+    padding: 2% 0;
+  }
+
+  .theme-mobile {
+    display: none;
+  }
+
+  .theme-desktop {
+    display: block;
+  }
+
+  #dark {
+    display: none;
   }
 
   .icon {
@@ -203,11 +222,5 @@ ul {
   .experience-container {
     margin-top: 5%;
     grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media screen and (min-width: 2000px) {
-  .nav {
-    padding: 3em;
   }
 }
