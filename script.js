@@ -11,21 +11,32 @@ const toggleNav = () => {
 };
 
 const darkMode = () => {
+  const black = "#000";
+  const white = "#fff";
+
   const body = document.querySelector("body");
   const a = document.querySelectorAll("a");
   const hamburger = document.querySelector(".hamburger");
   const icon = document.querySelector(".icon");
 
-  body.style.backgroundColor = "#000";
-  body.style.color = "#fff";
+  const manipulate = (theme) => {
+    body.style.backgroundColor = theme === "dark" ? black : white;
+    body.style.color = theme === "dark" ? white : black;
 
-  a.forEach((el) => {
-    el.style.color = "#fff";
-  });
+    a.forEach((el) => {
+      el.style.color = theme === "dark" ? white : black;
+    });
 
-  hamburger.style.backgroundColor = "#000";
-  hamburger.style.color = "#fff";
-  icon.style.backgroundColor = "#000";
+    hamburger.style.backgroundColor = theme === "dark" ? black : white;
+    hamburger.style.color = theme === "dark" ? white : black;
+    icon.style.backgroundColor = theme === "dark" ? black : white;
+  };
+
+  if (body.style.backgroundColor === "rgb(255, 255, 255)") {
+    manipulate("dark");
+  } else if (body.style.backgroundColor === "rgb(0, 0, 0)") {
+    manipulate("light");
+  }
 };
 
 const year = new Date().getFullYear();
