@@ -13,14 +13,14 @@
   <body style="background-color: #fff; color: #000">
     <header class="header">
       <div class="top">
-        <h1 class="title">Craig D'Silva</h1>
+        <h1 class="title"><a href="/" aria-label="homepage">Craig D'Silva</a></h1>
         <img
           src="assets/dark-mode.svg"
           alt="dark mode"
           class="theme-toggle theme-mobile"
           onclick="darkMode()"
         />
-        <button href="javascript:void(0);" class="icon" onclick="toggleNav()">
+        <button href="javascript:void(0);" class="icon" aria-label="menu dropdown" onclick="toggleNav()">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="24"
@@ -43,12 +43,12 @@
           <li class="nav-link"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-        <img
-          src="assets/dark-mode.svg"
-          alt="dark mode"
-          class="theme-toggle theme-desktop"
-          onclick="darkMode()"
-        />
+      <img
+        src="assets/dark-mode.svg"
+        alt="dark mode"
+        class="theme-toggle theme-desktop"
+        onclick="darkMode()"
+      />
     </header>
     <main class="main">
       <section id="about">
@@ -110,7 +110,7 @@
       <p class="copyright">&copy; <span id="year"></span> Craig D'Silva</p>
       <div class="social-links">
         <div>
-          <a href="https://www.linkedin.com/in/craig-s-dsilva/" target="_blank">
+          <a href="https://www.linkedin.com/in/craig-s-dsilva/" target="_blank" aria-label="linkedin">
             <svg
               fill="currentColor"
               height="64px"
@@ -134,7 +134,7 @@
           </a>
         </div>
         <div>
-          <a href="https://github.com/craig-dsilva" target="_blank"
+          <a href="https://github.com/craig-dsilva" target="_blank" aria-label="github"
             ><svg
               width="64px"
               height="64px"
@@ -171,7 +171,7 @@
           </a>
         </div>
         <div>
-          <a href="mailto:hello@craigdsilva.com" target="_blank"
+          <a href="mailto:hello@craigdsilva.com" target="_blank" aria-label="email"
             ><svg
               fill="currentColor"
               width="64px"
